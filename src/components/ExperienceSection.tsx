@@ -40,10 +40,10 @@ const ExperienceSection: React.FC = () => {
       period: '2024 - Present',
       location: 'Dhaka, BD',
       description: [
-        'Led development of Shopno OS, a Debian-based desktop operating system optimized for Bangladeshi users',
-        'Engineered a CAN Bus Simulator software for automotive testing and diagnostics',
-        'Integrated real-time data communication protocols for industrial and automotive environments',
-        'Collaborated with a cross-functional team to ensure product scalability and robustness'
+        'Led development of Shopno OS, a Debian-based desktop operating system optimized for Bangladeshi users.',
+        'Engineered a CAN Bus Simulator software for automotive testing and diagnostics.',
+        'Integrated real-time data communication protocols for industrial and automotive environments.',
+        'Collaborated with a cross-functional team to ensure product scalability and robustness.'
       ],
       tech: ['C++', 'Python', 'Linux', 'Qt', 'CAN Protocol']
     },
@@ -53,10 +53,10 @@ const ExperienceSection: React.FC = () => {
       period: '2019 - 2023',
       location: 'Remote',
       description: [
-        'Developed custom web applications for local businesses and startups',
-        'Designed and deployed full-stack solutions using modern frameworks and cloud services',
-        'Built responsive and accessible user interfaces with seamless backend integrations',
-        'Handled end-to-end project lifecycle including client communication, scoping, and delivery'
+        'Developed custom web applications for local businesses and startups.',
+        'Designed and deployed full-stack solutions using modern frameworks and cloud services.',
+        'Built responsive and accessible user interfaces with seamless backend integrations.',
+        'Handled end-to-end project lifecycle including client communication, scoping, and delivery.'
       ],
       tech: ['JavaScript', 'React', 'Node.js', 'Express', 'MongoDB', 'Firebase', 'AWS']
     },
@@ -66,10 +66,10 @@ const ExperienceSection: React.FC = () => {
       period: '2017 - 2018',
       location: 'Dhaka, Bangladesh',
       description: [
-        'Developed and customized WordPress themes and plugins for client websites',
-        'Optimized website performance and improved SEO rankings for multiple projects',
-        'Collaborated with designers to translate mockups into responsive websites',
-        'Provided ongoing maintenance and support to ensure site stability and uptime'
+        'Developed and customized WordPress themes and plugins for client websites.',
+        'Optimized website performance and improved SEO rankings for multiple projects.',
+        'Collaborated with designers to translate mockups into responsive websites.',
+        'Provided ongoing maintenance and support to ensure site stability and uptime.'
       ],
       tech: ['WordPress', 'PHP', 'HTML', 'CSS', 'JavaScript']
     }
