@@ -75,10 +75,7 @@ const AboutSection: React.FC = () => {
               data-animate="photo"
             >
               <div className="w-64 md:w-96 h-64 md:h-96 mx-auto mb-8 bg-accent-ivory rounded-2xl flex items-center justify-center border-2 border-dashed border-accent-cream hover:border-accent-charcoal transition-all duration-300 group">
-                <div className="text-center">
-                  <Camera className="w-12 h-12 text-accent-bronze group-hover:text-accent-charcoal transition-colors duration-300 mx-auto mb-2" />
-                  <p className="text-sm text-theme-gray-600 font-body">Add Your Photo Here</p>
-                </div>
+                <img src="/images/profile.jpg" alt="Ukay Khing Marma" className="w-full h-full object-cover rounded-2xl" />
               </div>
               <div className="text-center">
                 <h3 className="font-heading text-2xl font-bold text-theme-black mb-2">Ukay Khing Marma</h3>
