@@ -1,14 +1,13 @@
 User-agent: Googlebot
-Allow: /
-
-User-agent: Bingbot
-Allow: /
-
-User-agent: Twitterbot
-Allow: /
-
-User-agent: facebookexternalhit
-Allow: /
-
+Disallow: 
+User-agent: googlebot-image
+Disallow: 
+User-agent: googlebot-mobile
+Disallow: 
+User-agent: MSNBot
+Disallow: 
 User-agent: *
-Allow: /
+Disallow: 
+Crawl-delay: 20
+Disallow: /cgi-bin/
+Sitemap: https://www.ukaykhing.dev/sitemap.xml
