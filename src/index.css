@@ -1,0 +1,259 @@
+
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Figtree:wght@300;400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 9%;
+
+    --primary: 0 0% 9%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 0 0% 96%;
+    --secondary-foreground: 0 0% 9%;
+
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 45%;
+
+    --accent: 0 0% 96%;
+    --accent-foreground: 0 0% 9%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
+    --ring: 0 0% 9%;
+
+    --radius: 0.75rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-theme-white text-theme-black font-body;
+    background: #FFFFFF;
+    overflow-x: hidden;
+  }
+
+  /* Smooth scrolling with performance optimization */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Optimized scrollbar with GPU acceleration */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #F5F5F5;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #4A4947;
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #B17457;
+  }
+
+  /* Performance optimizations */
+  img {
+    content-visibility: auto;
+  }
+  
+  /* Enable hardware acceleration for smooth animations */
+  .carousel-item {
+    transform: translateZ(0);
+    will-change: transform;
+  }
+}
+
+@layer components {
+  /* Clean card effect with optimized transitions */
+  .clean-card {
+    @apply bg-theme-white border border-theme-gray-200 rounded-xl shadow-sm;
+    transform: translateZ(0);
+  }
+
+  .clean-card:hover {
+    @apply shadow-lg border-accent-charcoal/20;
+    transition: all 0.2s ease;
+  }
+
+  /* Glass effect for light theme */
+  .glass-light {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(250, 247, 240, 0.8);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Optimized hover glow effect */
+  .hover-glow {
+    transition: all 0.2s ease;
+    transform: translateZ(0);
+  }
+
+  .hover-glow:hover {
+    box-shadow: 0 0 30px rgba(74, 73, 71, 0.15);
+    transform: translateY(-2px) translateZ(0);
+  }
+
+  /* Interactive elements */
+  .story-link {
+    @apply relative inline-block after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-accent-charcoal after:origin-bottom-right after:transition-transform after:duration-200 hover:after:scale-x-100 hover:after:origin-bottom-left;
+  }
+
+  .hover-scale {
+    @apply transition-transform duration-200 hover:scale-105;
+    transform: translateZ(0);
+  }
+
+  /* Optimized loading states */
+  .loading-shimmer {
+    background: linear-gradient(90deg, #F5F5F5 25%, #EEEEEE 50%, #F5F5F5 75%);
+    background-size: 200% 100%;
+    animation: shimmer 2s infinite;
+  }
+
+  @keyframes shimmer {
+    0% {
+      background-position: -200% 0;
+    }
+    100% {
+      background-position: 200% 0;
+    }
+  }
+
+  /* Optimized floating animation for skills */
+  .float-animation {
+    animation: float 6s ease-in-out infinite;
+    transform: translateZ(0);
+  }
+
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0px) rotate(0deg) translateZ(0);
+    }
+    33% {
+      transform: translateY(-10px) rotate(1deg) translateZ(0);
+    }
+    66% {
+      transform: translateY(5px) rotate(-1deg) translateZ(0);
+    }
+  }
+
+  /* Optimized form inputs */
+  .form-input {
+    @apply w-full px-4 py-3 border border-theme-gray-300 rounded-lg focus:ring-2 focus:ring-accent-charcoal focus:border-transparent transition-all duration-200 font-body;
+    transform: translateZ(0);
+  }
+
+  .form-input:focus {
+    box-shadow: 0 0 0 3px rgba(74, 73, 71, 0.1);
+  }
+
+  /* Optimized buttons */
+  .btn-primary {
+    @apply bg-accent-charcoal text-theme-white px-6 py-3 rounded-lg font-medium hover:bg-accent-bronze hover:shadow-lg transition-all duration-200 transform hover:scale-105 font-body;
+    transform: translateZ(0);
+  }
+
+  .btn-secondary {
+    @apply border-2 border-theme-gray-300 text-theme-gray-700 px-6 py-3 rounded-lg font-medium hover:border-accent-charcoal hover:text-accent-charcoal transition-all duration-200 hover:scale-105 font-body;
+    transform: translateZ(0);
+  }
+
+  /* Optimized animations */
+  .fade-in-up {
+    animation: fadeInUp 0.6s ease-out;
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px) translateZ(0);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0) translateZ(0);
+    }
+  }
+
+  .slide-in-left {
+    animation: slideInLeft 0.6s ease-out;
+  }
+
+  @keyframes slideInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-30px) translateZ(0);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0) translateZ(0);
+    }
+  }
+
+  .slide-in-right {
+    animation: slideInRight 0.6s ease-out;
+  }
+
+  @keyframes slideInRight {
+    from {
+      opacity: 0;
+      transform: translateX(30px) translateZ(0);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0) translateZ(0);
+    }
+  }
+}
+
+/* Print styles */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+}
+
+/* High contrast mode */
+@media (prefers-contrast: high) {
+  .clean-card {
+    @apply border-2 border-theme-gray-600;
+  }
+}
+
+/* Reduced motion with performance consideration */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Performance optimizations for larger screens */
+@media (min-width: 1024px) {
+  .container {
+    contain: layout style paint;
+  }
+}
