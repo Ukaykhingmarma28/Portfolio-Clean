@@ -107,7 +107,7 @@ const AboutSection: React.FC = () => {
                 </div>
                 
                 <p className="font-body leading-relaxed">
-                I'm Ukay Khing Marma — a passionate Software, IoT, and R&D Engineer based in Malaysia. My journey into technology has been driven by a deep curiosity and a desire to solve real-world problems through innovation. I thrive at the intersection of hardware and software, building intelligent systems that make a meaningful impact.
+                I'm Ukay Khing Marma a passionate Software, IoT, and R&D Engineer based in Malaysia. My journey into technology has been driven by a deep curiosity and a desire to solve real-world problems through innovation. I thrive at the intersection of hardware and software, building intelligent systems that make a meaningful impact.
                 </p>
                 
                 <p className="font-body leading-relaxed">
