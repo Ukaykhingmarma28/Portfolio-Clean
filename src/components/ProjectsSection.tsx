@@ -21,7 +21,7 @@ const ProjectsSection: React.FC = () => {
   const projects = useMemo(() => [
     {
       title: 'Shopno OS',
-      description: 'Shopno OS is a modern, lightweight Linux-based operating system built on top of Debian 12, designed to deliver a fast, secure, and user-friendly computing experience. As a core developer at JaduPC, I led a team in the development, customization, and optimization of the OS, focusing on both performance and usability.',
+      description: 'Shopno OS is a modern, lightweight Linux-based operating system built on top of Debian 12, designed to deliver a fast, secure, and user-friendly computing experience. As a core developer at JaduPC, I am part of the team involved in the development, customization, and optimization of the OS, with a focus on both performance and usability.',
       tech: ['Debian 12', 'Bash', 'systemd', 'APT', 'GTK', 'GNOME', 'Shell Scripting', 'ISO building tools', 'Linux Kernel'],
       status: 'Live',
       liveUrl: 'https://jadupc.com/shopno-os/',
