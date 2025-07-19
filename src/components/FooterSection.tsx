@@ -152,7 +152,7 @@ const FooterSection: React.FC = () => {
             data-animate="bottom-footer"
           >
             <div className="font-body text-sm text-theme-gray-500 mb-4 md:mb-0">
-              © 2024 Ukay Khing Marma. All rights reserved.
+              © 2025 Ukay Khing Marma. All rights reserved.
             </div>
           </div>
         </div>
