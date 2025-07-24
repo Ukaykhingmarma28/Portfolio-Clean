@@ -40,7 +40,7 @@ const ExperienceSection: React.FC = () => {
       period: '2024 - Present',
       location: 'Dhaka, BD',
       description: [
-        'Led development of Shopno OS, a Debian-based desktop operating system optimized for Bangladeshi users.',
+        'Team member of Shopno OS, a Debian-based desktop operating system optimized for Bangladeshi users.',
         'Engineered a CAN Bus Simulator software for automotive testing and diagnostics.',
         'Integrated real-time data communication protocols for industrial and automotive environments.',
         'Collaborated with a cross-functional team to ensure product scalability and robustness.'
