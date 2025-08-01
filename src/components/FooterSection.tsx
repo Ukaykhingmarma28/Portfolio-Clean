@@ -37,7 +37,7 @@ const FooterSection: React.FC = () => {
   const socialLinks = [
     { name: 'GitHub', url: 'https://github.com/Ukaykhingmarma28', icon: Github },
     { name: 'LinkedIn', url: 'https://www.linkedin.com/in/ukay-khing-marma-29804b318/', icon: Linkedin },
-    { name: 'Email', url: 'mailto:ukaykhingmarma@gmail.com', icon: Mail }
+    { name: 'Email', url: 'mailto:ukaykhing25@gmail.com', icon: Mail }
   ];
 
   const quickLinks = [
